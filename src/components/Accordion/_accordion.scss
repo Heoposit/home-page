@@ -1,0 +1,27 @@
+.accordion {
+    .accordion__item {
+        border-bottom: 1px solid #C4C4C4;
+
+        &.accordion__item-active {
+            .accordion__item-content {
+                display: block;
+            }
+
+            .line2 {
+                transform: translate(0) !important;
+                transition: .1s all ease;
+            }
+
+            .line1 {
+                opacity: 0;
+                transition: .1s all ease;
+
+            }
+        }
+
+
+        .accordion__item-trigger {
+            
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.app {
+    .wrapp {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+}
+
+$height: 46px;
+.select {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    &__backdrop {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        z-index: -1;
+        display: none;
+    }
+
+    &.open {
+        .select__dropdown {display: block}
+        .select__input {border-bottom: none}
+        .select__backdrop {display: block;}
+    }
+
+    &__input {
+        border: 1px solid #CCC;
+        
+    }
+}
