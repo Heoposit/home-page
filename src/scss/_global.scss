@@ -27,6 +27,8 @@ body {
     &.locked {
         overflow: hidden;
     }
+    font-family: 'Poppins', sans-serif;
+    background: $lightGreenColor;
 }
 
     // Animations
@@ -39,4 +41,11 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+    // Global styles
+.btn {
+    padding: 9px 23px;
+    background: $GreenColor;
+    border-radius: 23px;
 }

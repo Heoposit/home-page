@@ -121,7 +121,7 @@ function css() {
     .pipe(clean_css())
     .pipe(
         rename({
-            extname: ' .min.css'
+            extname: '.min.css'
         })
     )
     .pipe(dest(path.build.css))
